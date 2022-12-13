@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* 
+from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=SimbaODBC_BigQuery
+Query=select damg7370DB_dxj_Crashe...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CRASH_DATE" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Date" />
+            <Field name="CRASH_TIME" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="BOROUGH" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="ZIP_CODE" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="LATITUDE" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Double" />
+            <Field name="LONGITUDE" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Double" />
+            <Field name="LOCATION" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="ON_STREET_NAME" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="CROSS_STREET_NAME" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="OFF_STREET_NAME" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="NUMBER_OF_PERSONS_INJURED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_PERSONS_KILLED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_PEDESTRIANS_INJURED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_PEDESTRIANS_KILLED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_CYCLIST_INJURED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_CYCLIST_KILLED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_MOTORIST_INJURED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="NUMBER_OF_MOTORIST_KILLED" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="CONTRIBUTING_FACTOR_VEHICLE_1" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_VEHICLE_2" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_VEHICLE_3" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_VEHICLE_4" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_VEHICLE_5" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="COLLISION_ID" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="Int64" />
+            <Field name="VEHICLE_TYPE_CODE_1" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="VEHICLE_TYPE_CODE_2" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="VEHICLE_TYPE_CODE_3" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="VEHICLE_TYPE_CODE_4" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+            <Field name="VEHICLE_TYPE_CODE_5" size="16384" source="File: odbc:DSN=SimbaODBC_BigQuery|||select damg7370DB_dxj_Crashes.* &#xA;from damg7370DB_dxj.Crashes damg7370DB_dxj_Crashes" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="174" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="COLLISION_ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="450" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">\\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Person.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="UNIQUE_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="COLLISION_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="CRASH_DATE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="CRASH_TIME" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PERSON_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PERSON_TYPE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PERSON_INJURY" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="VEHICLE_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PERSON_AGE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="EJECTION" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="EMOTIONAL_STATUS" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="BODILY_INJURY" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="POSITION_IN_VEHICLE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="SAFETY_EQUIPMENT" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PED_LOCATION" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PED_ACTION" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="COMPLAINT" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PED_ROLE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_1" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_2" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+            <Field name="PERSON_SEX" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Person.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="198" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="COLLISION_ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="426" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\MYWATE~1\AppData\Local\Temp\Engine_7704_cdd895a8b688d142b451674fc69522ea_\Engine_7704_abfe29f60f21194abe37368c11686983~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="426" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\MYWATE~1\AppData\Local\Temp\Engine_7704_cdd895a8b688d142b451674fc69522ea_\Engine_7704_c5540cf0d46ebf4f9d7614f0168dd7d1~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MYWATE~1\AppData\Local\Temp\Engine_7704_cdd895a8b688d142b451674fc69522ea_\Engine_7704_375bb2ba177a3a4c989c3c7ab07abd97~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">\\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Vehicles.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="UNIQUE_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="COLLISION_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CRASH_DATE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CRASH_TIME" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_ID" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="STATE_REGISTRATION" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_TYPE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_MAKE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_MODEL" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_YEAR" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="TRAVEL_DIRECTION" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_OCCUPANTS" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="DRIVER_SEX" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="DRIVER_LICENSE_STATUS" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="DRIVER_LICENSE_JURISDICTION" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="PRE_CRASH" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="POINT_OF_IMPACT" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE_1" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE_2" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="VEHICLE_DAMAGE_3" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="PUBLIC_PROPERTY_DAMAGE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="PUBLIC_PROPERTY_DAMAGE_TYPE" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_1" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+            <Field name="CONTRIBUTING_FACTOR_2" size="254" source="File: \\Mac\Home\Downloads\Motor_Vehicle_Collisions_-_Vehicles.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\MYWATE~1\AppData\Local\Temp\Engine_7704_cdd895a8b688d142b451674fc69522ea_\Engine_7704_ac0b2cc657787f48b970fadaa5db1ac8~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="210" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="COLLISION_ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="414" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MYWATE~1\AppData\Local\Temp\Engine_7704_cdd895a8b688d142b451674fc69522ea_\Engine_7704_d1278e97fa47dd4da6d0caad2fc7a0bc~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Unique" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Unique" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Unique" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Unique" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Unique" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Unique" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Motor_Collision_Profiling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f685d051-4a7d-45c2-88e4-c6a6e0ecc61a" />
+      <Telemetry>
+        <PreviousWorkflowId value="400f00d9-0e8a-4372-8414-7e16b9b15ce1" />
+        <OriginWorkflowId value="400f00d9-0e8a-4372-8414-7e16b9b15ce1" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
